@@ -1,0 +1,146 @@
+header {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.header__cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__head {
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.description {
+    color: var(--clr-neutral2);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.main__cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__cont>* {
+    width: 100%;
+    height: var(--height1);
+    margin: var(--my-1) 0;
+    padding: var(--padding-1);
+    position: relative;
+    overflow: hidden;
+}
+
+.main__cont>*::before {
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.cont1::before {
+    background-color: var(--clr-light2);
+}
+
+.cont2 {
+    height: calc(var(--height1) * 2 + 4rem);
+    margin: 0;
+    padding: 0;
+}
+
+.cont2>* {
+    width: 100%;
+    height: 44%;
+    margin-bottom: var(--my-1);
+    padding: var(--padding-1);
+}
+
+.cont2>*::before {
+    content: '';
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.box1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.box2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.box1::before {
+    background-color: var(--clr-light1);
+}
+
+.box2::before {
+    background-color: var(--clr-light3);
+}
+
+.cont3 {
+    margin: 0;
+}
+
+.cont3::before {
+    background-color: var(--clr-dark1);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.sub__description {
+    color: var(--clr-neutral2);
+    font-size: 15px;
+}
+
+.img__cont {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+@media (min-width: 860px) {
+    .header__cont {
+        width: 50%;
+    }
+
+    .main__cont {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main__cont>* {
+        margin: 0 1rem;
+        width: 33%;
+    }
+
+    .cont2 {
+        padding: 5px;
+        width: 35%;
+    }
+
+    .sub__description {
+        font-size: 12px;
+    }
+}

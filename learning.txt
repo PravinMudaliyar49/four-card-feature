@@ -1,0 +1,2 @@
+When the viewport size is very small, we can opt to not style it.
+When child's box-shadow isn't visible, as width is 100%, give some padding to the parent element.
